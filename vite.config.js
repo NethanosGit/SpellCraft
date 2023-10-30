@@ -9,7 +9,7 @@ export default defineConfig({
   pwa: {
     workboxPluginMode: "GenerateSW",
   },
-  base: "/SpellCraft/",
+  base: "/spellcraft/",
   plugins: [
     vue(),
     // https://github.com/vuetifyjs/vuetify-loader/tree/next/packages/vite-plugin
