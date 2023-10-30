@@ -7,7 +7,10 @@ const path = require("path");
 // https://vitejs.dev/config/
 export default defineConfig({
   pwa: {
-    workboxPluginMode: "GenerateSW",
+    workboxPluginMode: "InjectManifest",
+    workboxOptions: {
+      swSrc: "./src/service-worker.js",
+    },
   },
   base: "/spellcraft/",
   plugins: [
